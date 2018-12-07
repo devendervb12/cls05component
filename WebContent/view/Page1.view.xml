@@ -1,0 +1,13 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="emax.cls05.controller.Page1">
+         <Page title="Page1">
+           <content>
+              <List items="{/ProductSet}">
+                 <items>
+                    <StandardListItem title="{ProductID}"  description="{Name}" type="Active"
+                    press="onItemSelection"
+                    />
+                 </items>
+              </List>
+           </content>
+         </Page>      
+</mvc:View>

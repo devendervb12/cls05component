@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="emax.cls05.controller.Page2">
+         <Page title="Page2">
+          <Text text="{ProductID}"/>
+          <Text text="{Name}"/>
+          <Text text="{Category}"/>
+          <Text text="{TypeCode}"/>
+         	 <Button text="Goto Page1" press="gotoPage1"/>
+         </Page>      
+</mvc:View>

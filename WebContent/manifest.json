@@ -1,0 +1,41 @@
+{
+  "sap.app" : {
+     "id" : "emax.cls05",
+     "dataSources" : {
+         "emaxProduct" : {
+            "uri" : "proxy/http/cloud.mydomain.com:8700/sap/opu/odata/SAP/ZGW_CLS05_PRODUCT_SRV/"
+         }
+     }
+  },
+  "sap.ui5" : {
+  	"rootView" : "emax.cls05.view.App",
+  	"models" : {
+  	   "" : {
+  	     "dataSource" : "emaxProduct"
+  	   }
+  	},
+		"routing" : {
+			"config" : {
+				"routerClass" : "sap.m.routing.Router",
+				 "viewType" : "XML",
+				 "controlId" : "idApp",
+			    "controlAggregation" : "pages",
+			    "viewPath" : "emax.cls05.view" 
+			},
+			"routes" : [
+				{					
+				  "pattern" : "",
+				  "name" : "home",
+				  "viewName" : "Page1"				 
+			    },
+			    {			    
+			        "pattern" : "gotoPage2/{pid}",
+			    	"name" : "p2",
+			    	"viewName" : "Page2"			    	
+			    }
+				]
+			
+		}
+  }
+
+}
